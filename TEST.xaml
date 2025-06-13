@@ -1,0 +1,511 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TEST" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1211,1671" sap2010:WorkflowViewState.IdRef="TEST_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:si="clr-namespace:System.IO;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.StudioWeb.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap2010:WorkflowViewState.ViewStateManager>
+    <sap2010:ViewStateManager>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="334,166" Id="InvokeProcess_1" />
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="376,254" Id="Sequence_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </sap2010:ViewStateData>
+      <sap2010:ViewStateData sap:VirtualizedContainerService.HintSize="1243,939" Id="TEST_1" />
+    </sap2010:ViewStateManager>
+  </sap2010:WorkflowViewState.ViewStateManager>
+  <Sequence DisplayName="TEST" sap:VirtualizedContainerService.HintSize="554,1606" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="njl:JObject" Name="DT_JSON" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_CHECK" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT_Filtered" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Read Jurnal PB bank txt" sap:VirtualizedContainerService.HintSize="512,1242" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="Text" />
+        <Variable x:TypeArguments="x:String" Name="accountNumber" />
+        <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+        <Variable x:TypeArguments="x:String" Name="fileName" />
+        <Variable x:TypeArguments="njl:JObject" Name="jsonData" />
+        <Variable x:TypeArguments="njl:JArray" Name="testJArray" />
+        <Variable x:TypeArguments="x:Int32" Name="Index" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="450,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[fileName]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">MT940 Mandiri 451 - 16 April 2025 - Copy</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:ReadTextFile File="{x:Null}" Content="[Text]" DisplayName="Read Text File" FileName="[&quot;D:\CODE.ID\Muhammad Rizki Gajah\Ui-Path\AOP\General\PB\Data Test\&quot; + fileName + &quot;.txt&quot;]" sap:VirtualizedContainerService.HintSize="450,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <Sequence DisplayName="To Array" sap:VirtualizedContainerService.HintSize="450,705" sap2010:WorkflowViewState.IdRef="Sequence_25">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Int32" Name="indexFound" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="CommentOut_14">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,321" sap2010:WorkflowViewState.IdRef="Sequence_26">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[Text.Replace(vbCrLf,&quot;&quot;)]" />
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="[Index]" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="334,52" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Text.Split(vbCrLf)]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="currentText" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,680" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="410,141" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[Index.ToString + &quot; - &quot; + currentText]" />
+                      <If Condition="[currentText.Contains(&quot;:86:&quot;) And currentText.Contains(&quot;Pooling&quot;)]" sap:VirtualizedContainerService.HintSize="410,411" sap2010:WorkflowViewState.IdRef="If_1">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_10" Level="Warn" Message="[Index.ToString + &quot; - &quot; +  currentText]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap2010:WorkflowViewState.IdRef="Sequence_17" />
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
+        <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Example: Input array&#xD;&#xA;Console.WriteLine(&quot;Prepare DT Report&quot;)&#xD;&#xA;Dim DTReport As New DataTable&#xD;&#xA;DTReport.Columns.Add(&quot;Date&quot;, GetType(String))&#xD;&#xA;DTReport.Columns.Add(&quot;Amount&quot;, GetType(Decimal))&#xD;&#xA;DTReport.Columns.Add(&quot;Type&quot;, GetType(String))&#xD;&#xA;DTReport.Columns.Add(&quot;Description&quot;, GetType(String))&#xD;&#xA;&#xD;&#xA;Console.WriteLine(&quot;Extracting Account Number...&quot;)&#xD;&#xA;Dim accMatch = System.Text.RegularExpressions.Regex.Match(rawText, &quot;:25:(\d+)&quot;)&#xD;&#xA;If accMatch.Success Then&#xD;&#xA;&#x9;accountNumber = accMatch.Groups(1).Value&#xD;&#xA;&#x9;Console.WriteLine(&quot;Account Number Found: &quot; &amp; accountNumber)&#xD;&#xA;Else&#xD;&#xA;&#x9;Console.WriteLine(&quot;Account Number not found.&quot;)&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;Dim last3Digits As String = &quot;&quot;&#xD;&#xA;If accountNumber.Length &gt;= 3 Then&#xD;&#xA;&#x9;last3Digits = accountNumber.Substring(accountNumber.Length - 3)&#xD;&#xA;&#x9;Console.WriteLine(&quot;Last 3 digits of Account Number: &quot; &amp; last3Digits)&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;' Get indexes of items that contain &quot;Pooling&quot;&#xD;&#xA;Dim indexes = inputArray.&#xD;&#xA;                Select(Function(value, index) New With {Key .Value = value, Key .Index = index}).&#xD;&#xA;                Where(Function(x) (x.Value.ToLower().Contains(&quot;pooling&quot;) Or x.Value.ToLower().Contains(&quot;mdr &quot; +last3Digits)) And  x.Value.ToLower().Contains(&quot;:86:&quot;) ).&#xD;&#xA;                Select(Function(x) x.Index).&#xD;&#xA;                ToArray()&#xD;&#xA;&#xD;&#xA;' Output: indexes() → {1,3} for this example&#xD;&#xA;For Each i In indexes&#xD;&#xA;    Console.WriteLine(&quot;Found 'Pooling' at position: &quot; &amp; i)&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Dim jurnalInfo As String = inputArray(i-1).ToString.Replace(&quot;:61:&quot;,&quot;&quot;)&#xD;&#xA;&#x9;Console.WriteLine(&quot;Asssign Date &quot; + jurnalInfo.Split(&quot;D&quot;)(0).ToString)&#xD;&#xA;&#x9;Dim dateJurnal As String  &#x9;= &#x9;Datetime.ParseExact(&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;jurnalInfo.Split(&quot;D&quot;)(0).ToString,&quot;yyMMdd&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;System.Globalization.CultureInfo.InvariantCulture&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;).ToString(&quot;dd.MM.yyyy&quot;)&#xD;&#xA;&#x9;Console.WriteLine(&quot;Asssign Amount&quot;)&#xD;&#xA;&#x9;Dim amount As String &#x9;&#x9;= CDbl(If(jurnalInfo.ToString.Contains(&quot;,&quot;), jurnalInfo.ToString.Split(&quot;,&quot;)(0).ToString.Split(&quot;D&quot;)(1).tostring.Replace(&quot;\D&quot;,&quot;&quot;), jurnalInfo.ToString.Split(&quot;D&quot;)(1).tostring.Replace(&quot;\D&quot;,&quot;&quot;) )).ToString()&#xD;&#xA;&#x9;Console.WriteLine(&quot;Asssign Type&quot;)&#xD;&#xA;&#x9;Dim type As String&#x9;&#x9;&#x9;&#x9;= If(jurnalInfo.ToString.Contains(&quot;,&quot;), jurnalInfo.ToString.Split(&quot;,&quot;)(0).ToString, jurnalInfo.ToString )&#xD;&#xA;&#x9;Console.WriteLine(type)&#xD;&#xA;&#x9;Type&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;= System.Text.RegularExpressions.Regex.Replace(type, &quot;\d+&quot;, &quot;&quot;).Substring(0,1)&#xD;&#xA;&#x9;Console.WriteLine(&quot;Asssign Description&quot;)&#xD;&#xA;&#x9;Dim Description As String &#x9;= inputArray(i).ToString.Replace(&quot;:86:&quot;,&quot;&quot;)&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Console.WriteLine(&quot;Asssign to DT&quot;)&#xD;&#xA;&#x9;DTReport.Rows.Add(dateJurnal, amount, type, Description)&#xD;&#xA;&#x9;indexFound = i&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;DT = DTReport.Copy()&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_6">
+          <ui:InvokeCode.Arguments>
+            <InArgument x:TypeArguments="s:String[]" x:Key="inputArray">
+              <VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="Text.Split(vbCrLf)" />
+            </InArgument>
+            <OutArgument x:TypeArguments="x:Int32" x:Key="indexFound">
+              <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="indexFound" />
+            </OutArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="rawText">
+              <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Text" />
+            </InArgument>
+            <OutArgument x:TypeArguments="x:String" x:Key="accountNumber">
+              <VisualBasicReference x:TypeArguments="x:String" ExpressionText="accountNumber" />
+            </OutArgument>
+            <OutArgument x:TypeArguments="sd:DataTable" x:Key="DT">
+              <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="DT" />
+            </OutArgument>
+          </ui:InvokeCode.Arguments>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:InvokeCode>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Warn" Message="[Text.Split(vbCrLf)(indexFound - 1).ToString.Replace(&quot;:61:&quot;,&quot;&quot;) + vbNewLine + Text.Split(vbCrLf)(indexFound).ToString.Replace(&quot;:86:&quot;,&quot;&quot;)]" />
+        <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,116" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet1" WorkbookPath="D:\CODE.ID\Muhammad Rizki Gajah\Ui-Path\AOP\General\PB\Data Test\test2.xlsx">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:WriteRange>
+      </Sequence>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="492,577" sap2010:WorkflowViewState.IdRef="Sequence_24">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="To DT" sap:VirtualizedContainerService.HintSize="450,368" sap2010:WorkflowViewState.IdRef="Sequence_22">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Initialize output variables&#xD;&#xA;'accountNumber = &quot;&quot;&#xD;&#xA;Dim trxType = 1&#xD;&#xA;Dim debitTable = New DataTable()&#xD;&#xA;debitTable.Columns.Add(&quot;Date&quot;, GetType(String))&#xD;&#xA;debitTable.Columns.Add(&quot;Amount&quot;, GetType(Decimal))&#xD;&#xA;debitTable.Columns.Add(&quot;Type&quot;, GetType(String))&#xD;&#xA;debitTable.Columns.Add(&quot;Description&quot;, GetType(String))&#xD;&#xA;&#xD;&#xA;Console.WriteLine(&quot;Extracting Account Number...&quot;)&#xD;&#xA;Dim accMatch = System.Text.RegularExpressions.Regex.Match(rawText, &quot;:25:(\d+)&quot;)&#xD;&#xA;If accMatch.Success Then&#xD;&#xA;&#x9;accountNumber = accMatch.Groups(1).Value&#xD;&#xA;&#x9;Console.WriteLine(&quot;Account Number Found: &quot; &amp; accountNumber)&#xD;&#xA;Else&#xD;&#xA;&#x9;Console.WriteLine(&quot;Account Number not found.&quot;)&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;Dim last3Digits As String = &quot;&quot;&#xD;&#xA;If accountNumber.Length &gt;= 3 Then&#xD;&#xA;&#x9;last3Digits = accountNumber.Substring(accountNumber.Length - 3)&#xD;&#xA;&#x9;Console.WriteLine(&quot;Last 3 digits of Account Number: &quot; &amp; last3Digits)&#xD;&#xA;End If&#xD;&#xA;&#xD;&#xA;Console.WriteLine(&quot;Extracting debit transactions...&quot;)&#xD;&#xA;'Dim trxPattern As String = &quot;:61:(\d{6}).*?D(\d+)[,.](\d{2}).*?:86:(.+?)(?=(\n|$)|:61:|:62F:|:64:)&quot;&#xD;&#xA;Dim trxPattern As String = &quot;:61:(\d{6})(.{4})[,.](\d{2}).*?:86:(.+?)(?=(\n|$)|:61:|:62F:|:64:)&quot;&#xD;&#xA;'Dim trxMatches = System.Text.RegularExpressions.Regex.Matches(rawText, trxPattern, System.Text.RegularExpressions.RegexOptions.Singleline)&#xD;&#xA;Dim trxMatches = System.Text.RegularExpressions.Regex.Matches(rawText, trxPattern)&#xD;&#xA;&#xD;&#xA;Console.WriteLine(&quot;Found &quot; &amp; trxMatches.Count.ToString &amp; &quot; debit transactions in rawText&quot;)&#xD;&#xA;&#xD;&#xA;For Each m As System.Text.RegularExpressions.Match In trxMatches&#xD;&#xA;&#x9;Dim trxDate As String = Datetime.ParseExact(&#xD;&#xA;&#x9;&#x9;&#x9;m.Groups(1).Value.ToString,&quot;yyMMdd&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;System.Globalization.CultureInfo.InvariantCulture&#xD;&#xA;&#x9;&#x9;).ToString(&quot;dd.MM.yyyy&quot;)&#xD;&#xA;&#x9;Dim trxAmount As Decimal = Decimal.Parse(m.Groups(2).Value &amp; &quot;.&quot; &amp; m.Groups(3).Value, Globalization.CultureInfo.InvariantCulture)&#xD;&#xA;&#x9;Dim trxTypeStr As String = &quot;Debit&quot;&#xD;&#xA;&#x9;Dim trxDesc As String = m.Groups(4).Value.Trim().Replace(vbLf, &quot;&quot;).Replace(vbCr, &quot;&quot;)&#xD;&#xA;&#xD;&#xA;&#x9;' Debug individual transaction&#xD;&#xA;&#x9;Console.WriteLine(&quot;Checking transaction: &quot; &amp; trxDate &amp; &quot; Amount: &quot; &amp; trxAmount.ToString() &amp; &quot; Desc: &quot; &amp; trxDesc)&#xD;&#xA;&#xD;&#xA;&#x9;If trxDesc.ToLower().Contains(&quot;pooling&quot;) Then&#xD;&#xA;&#x9;&#x9;Console.WriteLine(&quot;→ Matched Pooling Transaction&quot;)&#xD;&#xA;&#x9;&#x9;debitTable.Rows.Add(trxDate, trxAmount, trxTypeStr, trxDesc)&#xD;&#xA;&#x9;Else If trxDesc.Contains(&quot;MDR&quot; &amp; last3Digits) Then&#xD;&#xA;&#x9;&#x9;Console.WriteLine(&quot;→ Matched MDR Transaction&quot;)&#xD;&#xA;&#x9;&#x9;debitTable.Rows.Add(trxDate, trxAmount, trxTypeStr, trxDesc)&#xD;&#xA;&#x9;End If&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;'If trxType = 1 Then&#xD;&#xA;&#x9;&#x9;' Rule Type 1 → Description contains &quot;Pooling&quot;&#xD;&#xA;&#x9;&#x9;'If trxDesc.ToLower().Contains(&quot;pooling&quot;) Then&#xD;&#xA;&#x9;&#x9;&#x9;'Console.WriteLine(&quot;→ Matched Pooling Transaction&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;'debitTable.Rows.Add(trxDate, trxAmount, trxTypeStr, trxDesc)&#xD;&#xA;&#x9;&#x9;'End If&#xD;&#xA;&#x9;'ElseIf trxType = 2 Then&#xD;&#xA;&#x9;&#x9;' Rule Type 2 → Description contains &quot;MDR&quot; followed by last 3 digits of Account Number&#xD;&#xA;&#x9;&#x9;'If trxDesc.Contains(&quot;MDR&quot; &amp; last3Digits) Then&#xD;&#xA;&#x9;&#x9;&#x9;'Console.WriteLine(&quot;→ Matched MDR Transaction&quot;)&#xD;&#xA;&#x9;&#x9;&#x9;'debitTable.Rows.Add(trxDate, trxAmount, trxTypeStr, trxDesc)&#xD;&#xA;&#x9;&#x9;'End If&#xD;&#xA;&#x9;'End If&#xD;&#xA;Next&#xD;&#xA;&#xD;&#xA;DTReport = debitTable.copy()&#xD;&#xA;Console.WriteLine(&quot;Completed. Total filtered transactions: &quot; &amp; debitTable.Rows.Count.ToString())&#xD;&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_5">
+                <ui:InvokeCode.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="rawText">[Text]</InArgument>
+                  <OutArgument x:TypeArguments="x:String" x:Key="accountNumber">[accountNumber]</OutArgument>
+                  <OutArgument x:TypeArguments="sd:DataTable" x:Key="DTReport">[DT]</OutArgument>
+                </ui:InvokeCode.Arguments>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:InvokeCode>
+              <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[DT]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="388,52" sap2010:WorkflowViewState.IdRef="WriteRange_3" SheetName="Sheet1" WorkbookPath="D:\CODE.ID\Muhammad Rizki Gajah\Ui-Path\AOP\General\PB\Data Test\test.xlsx">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:WriteRange>
+            </Sequence>
+            <Sequence DisplayName="To JSON" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_23">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:InvokeCode ContinueOnError="{x:Null}" Code="' Required: Argument rawText (In), transactionsDT (Out), transactionsJSON (Out)&#xA;&#xA;Dim transactionsDT As New DataTable&#xA;transactionsDT.Columns.Add(&quot;Date&quot;, GetType(String))&#xA;transactionsDT.Columns.Add(&quot;Amount&quot;, GetType(Decimal))&#xA;transactionsDT.Columns.Add(&quot;Type&quot;, GetType(String))&#xA;transactionsDT.Columns.Add(&quot;Description&quot;, GetType(String))&#xA;&#xA;' Pattern for ALL transactions (Credit and Debit)&#xA;'Dim trxPattern As String = &quot;:61:(\d{6})(.{4})([CD])(\d+)[,.](\d{2}).*?:86:(.+?)(?=(\n|$)|:61:|:62F:|:64:)&quot;&#xA;Dim trxPattern As String = &quot;:61:(\d{6})(.{4})([CD])(\d+)[,.](\d{2}).*?:86:(.*?)(?=:61:|:62F:|:64:|-\})&quot;&#xA;'Dim trxPattern As String = &quot;:61:(\d{6})(.{4})([CD])(\d+)[,.](\d{2}).*?:86:(.+?)(?=(\n|$))&quot;&#xA;'Dim trxPattern As String = &quot;:61:(\d{6}).*?[CD](\d+)[,.](\d{2}).*?:86:(.+?)(?=(\n|$|:61:))&quot;&#xA;Dim trxMatches = System.Text.RegularExpressions.Regex.Matches(rawText, trxPattern, System.Text.RegularExpressions.RegexOptions.Singleline)&#xA;&#xA;&#xA;Console.WriteLine(&quot;Found &quot; &amp; trxMatches.Count &amp; &quot; transactions&quot;)&#xA;&#xA;For Each m As System.Text.RegularExpressions.Match In trxMatches&#xA;    Dim trxDate As String = m.Groups(1).Value  ' YYMMDD&#xA;    Dim trxSign As String = m.Groups(3).Value  ' C or D → Credit/Debit&#xA;    Dim trxAmount As Decimal = Decimal.Parse(m.Groups(4).Value &amp; &quot;.&quot; &amp; m.Groups(5).Value, Globalization.CultureInfo.InvariantCulture)&#xA;    Dim trxDesc As String = m.Groups(6).Value.Trim()&#xA;    Dim trxType As String = If(trxSign = &quot;D&quot;, &quot;Debit&quot;, &quot;Credit&quot;)&#xA;&#xA;    transactionsDT.Rows.Add(trxDate, trxAmount, trxType, trxDesc)&#xA;Next&#xA;&#xA;' Serialize to JSON using simple StringBuilder approach (because JavaScriptSerializer doesn't work without Imports)&#xA;Dim sb As New System.Text.StringBuilder&#xA;sb.Append(&quot;{&quot;)&#xA;&#xA;For i As Integer = 0 To transactionsDT.Rows.Count - 1&#xA;&#x9;Dim row = transactionsDT.Rows(i)&#xA;&#x9;sb.Append( Chr(34) + i.ToString + Chr(34) + &quot; : {&quot;)&#xA;&#x9;sb.AppendFormat(&quot;&quot;&quot;Date&quot;&quot;:&quot;&quot;{0}&quot;&quot;,&quot;, row(&quot;Date&quot;))&#xA;&#x9;sb.AppendFormat(&quot;&quot;&quot;Amount&quot;&quot;:&quot;&quot;{0}&quot;&quot;,&quot;, row(&quot;Amount&quot;))&#xA;&#x9;sb.AppendFormat(&quot;&quot;&quot;Type&quot;&quot;:&quot;&quot;{0}&quot;&quot;,&quot;, row(&quot;Type&quot;))&#xA;&#x9;sb.AppendFormat(&quot;&quot;&quot;Description&quot;&quot;:&quot;&quot;{0}&quot;&quot;&quot;, row(&quot;Description&quot;).ToString.Replace(&quot;&quot;&quot;&quot;,&quot;\&quot;&quot;&quot;))&#xA;&#x9;sb.Append(&quot;}&quot;)&#xA;&#x9;If i &lt; transactionsDT.Rows.Count - 1 Then sb.Append(&quot;,&quot;)&#xA;Next&#xA;sb.Append(&quot;}&quot;)&#xA;&#xA;transactionsJSON = sb.ToString()&#xA;'transactionsJSON = &quot;{&quot;&quot;transactions&quot;&quot;:&quot; &amp; sb.ToString() &amp; &quot;}&quot;&#xA;&#xA;Console.WriteLine(&quot;Completed parsing transactions&quot;)&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="388,165" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+                <ui:InvokeCode.Arguments>
+                  <OutArgument x:TypeArguments="x:String" x:Key="transactionsJSON">[Text]</OutArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="rawText">[Text]</InArgument>
+                </ui:InvokeCode.Arguments>
+              </ui:InvokeCode>
+              <ui:DeserializeJson x:TypeArguments="njl:JObject" JsonSample="{x:Null}" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[jsonData]" JsonString="[Text]" />
+              <ui:DeserializeJsonArray DisplayName="Deserialize JSON Array" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="DeserializeJsonArray_2" JsonArray="[testJArray]" JsonString="[Text]" />
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="CommentOut_11">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,253" sap2010:WorkflowViewState.IdRef="Sequence_20">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim resultDict As New System.Collections.Generic.Dictionary(Of String, Object)()&#xA;Dim transactionsList As New System.Collections.Generic.List(Of Object)()&#xA;&#xA;' Extract Account Number&#xA;System.Console.WriteLine(&quot;Extracting Account Number...&quot;)&#xA;Dim accountNumber As String = &quot;&quot;&#xA;Dim accMatch = System.Text.RegularExpressions.Regex.Match(rawText, &quot;:25:(\d+)&quot;)&#xA;If accMatch.Success Then&#xA;&#x9;accountNumber = accMatch.Groups(1).Value&#xA;&#x9;System.Console.WriteLine(&quot;Account Number Found: &quot; &amp; accountNumber)&#xA;Else&#xA;&#x9;System.Console.WriteLine(&quot;Account Number not found.&quot;)&#xA;End If&#xA;resultDict(&quot;AccountNumber&quot;) = accountNumber&#xA;&#xA;' Get Last 3 Digits for MDR&#xA;Dim last3Digits As String = &quot;&quot;&#xA;If accountNumber.Length &gt;= 3 Then last3Digits = accountNumber.Substring(accountNumber.Length - 3)&#xA;&#xA;' Regex pattern for debit transactions&#xA;'Dim trxPattern As String = &quot;:61:(\d{6}).*?D(\d+)[,.](\d{2}).*?:86:(.+?)(?=(\n|$)|:61:|:62F:|:64:)&quot;&#xA;Dim trxPattern As String = &quot;:61:(\d{6})(.{4})[,.](\d{2}).*?:86:(.+?)(?=(\n|$)|:61:|:62F:|:64:)&quot;&#xA;Dim trxMatches = System.Text.RegularExpressions.Regex.Matches(rawText, trxPattern)&#xA;&#xA;System.Console.WriteLine(&quot;Found &quot; &amp; trxMatches.Count.ToString &amp; &quot; debit transactions in rawText&quot;)&#xA;&#xA;For Each m As System.Text.RegularExpressions.Match In trxMatches&#xA;&#x9;Dim trxDate As String = m.Groups(1).Value&#xA;&#x9;Dim trxAmount As Decimal = Decimal.Parse(m.Groups(2).Value &amp; &quot;.&quot; &amp; m.Groups(3).Value, System.Globalization.CultureInfo.InvariantCulture)&#xA;&#x9;Dim trxDesc As String = m.Groups(4).Value.Trim().Replace(vbLf, &quot;&quot;).Replace(vbCr, &quot;&quot;)&#xA;&#xA;&#x9;If trxType = 1 AndAlso trxDesc.ToLower().Contains(&quot;pooling&quot;) Then&#xA;&#x9;&#x9;transactionsList.Add(New System.Collections.Generic.Dictionary(Of String, Object) From {&#xA;&#x9;&#x9;&#x9;{&quot;Date&quot;, trxDate},&#xA;&#x9;&#x9;&#x9;{&quot;Amount&quot;, trxAmount},&#xA;&#x9;&#x9;&#x9;{&quot;Type&quot;, &quot;Debit&quot;},&#xA;&#x9;&#x9;&#x9;{&quot;Description&quot;, trxDesc}&#xA;&#x9;&#x9;})&#xA;&#x9;ElseIf trxType = 2 AndAlso trxDesc.Contains(&quot;MDR&quot; &amp; last3Digits) Then&#xA;&#x9;&#x9;transactionsList.Add(New System.Collections.Generic.Dictionary(Of String, Object) From {&#xA;&#x9;&#x9;&#x9;{&quot;Date&quot;, trxDate},&#xA;&#x9;&#x9;&#x9;{&quot;Amount&quot;, trxAmount},&#xA;&#x9;&#x9;&#x9;{&quot;Type&quot;, &quot;Debit&quot;},&#xA;&#x9;&#x9;&#x9;{&quot;Description&quot;, trxDesc}&#xA;&#x9;&#x9;})&#xA;&#x9;End If&#xA;Next&#xA;&#xA;resultDict(&quot;Transactions&quot;) = transactionsList&#xA;&#xA;' Serialize with Newtonsoft.Json&#xA;jsonResult = Newtonsoft.Json.JsonConvert.SerializeObject(resultDict)&#xA;&#xA;System.Console.WriteLine(&quot;JSON Conversion Completed.&quot;)&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="334,165" sap2010:WorkflowViewState.IdRef="InvokeCode_4">
+              <ui:InvokeCode.Arguments>
+                <InArgument x:TypeArguments="x:Int32" x:Key="trxType">1</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="jsonResult">[Text]</OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="rawText">[Text]</InArgument>
+              </ui:InvokeCode.Arguments>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InvokeCode>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,52" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,169" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEachFileX DisplayName="For Each File in Folder" Folder="D:\CODE.ID\Muhammad Rizki Gajah\Ui-Path\A. Data Test\RPA PB - SSC" sap:VirtualizedContainerService.HintSize="334,81" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+            <ui:ForEachFileX.Body>
+              <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+                <ActivityAction.Argument1>
+                  <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+                </ActivityAction.Argument1>
+                <ActivityAction.Argument2>
+                  <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                </ActivityAction.Argument2>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_3" Message="[CurrentFile.Name.Replace(Path.GetExtension(CurrentFile.tostring),&quot;&quot;)]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachFileX.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEachFileX>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="476,443" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadCsvFile PathResource="{x:Null}" DataTable="[DT_CHECK]" Delimitator="Comma" DelimitatorForViewModel="Comma" DisplayName="Read CSV" FilePath="D:\CODE.ID\Muhammad Rizki Gajah\Ui-Path\A. Data Test\RPA PB - SSC\00902412840.csv" sap:VirtualizedContainerService.HintSize="434,154" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+          <ui:FilterDataTable DataTable="[DT_CHECK]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[DT_Filtered]" SelectColumnsMode="Remove">
+            <ui:FilterDataTable.Filters>
+              <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                  <ui:FilterOperationArgument.Column>
+                    <InArgument x:TypeArguments="x:Int32">[8]</InArgument>
+                  </ui:FilterOperationArgument.Column>
+                  <ui:FilterOperationArgument.Operand>
+                    <InArgument x:TypeArguments="x:String">["PB CPN"]</InArgument>
+                  </ui:FilterOperationArgument.Operand>
+                </ui:FilterOperationArgument>
+              </scg:List>
+            </ui:FilterDataTable.Filters>
+            <ui:FilterDataTable.SelectColumns>
+              <scg:List x:TypeArguments="InArgument" Capacity="4">
+                <x:Null />
+              </scg:List>
+            </ui:FilterDataTable.SelectColumns>
+          </ui:FilterDataTable>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="512,52" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="452,545" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="{x:Null}" DisplayName="For Each currentDataColumn" sap:VirtualizedContainerService.HintSize="410,365" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[DT_CHECK.Columns]">
+            <ui:ForEach.Body>
+              <ActivityAction x:TypeArguments="sd:DataColumn">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="currentDataColumn" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[currentDataColumn]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEach.Body>
+          </ui:ForEach>
+          <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[DT_Filtered]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="410,52" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+            <ui:ForEachRow.Body>
+              <ActivityAction x:TypeArguments="sd:DataRow">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="sd:DataRow" Name="Row" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,229" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[Row(8)]" />
+                </Sequence>
+              </ActivityAction>
+            </ui:ForEachRow.Body>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ForEachRow>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

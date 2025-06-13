@@ -1,0 +1,15 @@
+{
+  "Tags": [
+    {
+      "Key": "Project"
+    },
+    {
+      "Key": "Projects"
+    },
+    {
+      "Key": "Template"
+    }
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
+}
